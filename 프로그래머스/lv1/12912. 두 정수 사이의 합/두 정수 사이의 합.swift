@@ -1,4 +1,3 @@
-// 22-09-28(27)
 func solution(_ a:Int, _ b:Int) -> Int64 {
     var ans : Int = 0
     if a > b {
