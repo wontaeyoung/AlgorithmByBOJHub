@@ -1,8 +1,8 @@
 import Foundation
 
 struct Pos {
-    var x : Int
-    var y : Int
+    var x: Int
+    var y: Int
     
     func getDistance(dest : Pos) -> Int {
         return abs(x - dest.x) + abs(y - dest.y)
@@ -11,7 +11,7 @@ struct Pos {
 
 func solution(_ numbers:[Int], _ hand:String) -> String {
     
-    var answer : String = ""
+    var answer: String = ""
     
     let posDict : [Int : Pos] = [
         1 : Pos(x: 0, y: 3), 2 : Pos(x: 1, y: 3), 3 : Pos(x: 2, y: 3),
@@ -25,8 +25,8 @@ func solution(_ numbers:[Int], _ hand:String) -> String {
     
     for number in numbers {
         
-        let touchHand : String
-        let target : Pos = posDict[number]!
+        let touchHand: String
+        let target: Pos = posDict[number]!
         
         switch target.x {
         case 0:
