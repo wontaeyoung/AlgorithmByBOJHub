@@ -6,9 +6,11 @@ func solution(_ skill:String, _ skill_trees:[String]) -> Int {
     
     for index in 0..<skillTree.count {
         let someSkill = skillTree[index]
+        
         let skillString = someSkill.filter { c in
             skill.contains(c)
         }.map{String($0)}.joined()
+        
         skillTree[index] = skillString
     }
     
@@ -30,7 +32,6 @@ func solution(_ skill:String, _ skill_trees:[String]) -> Int {
         }
         isPossibleArray.append(isPossible)
     }
-    
     
     return isPossibleArray.filter{$0 == true}.count
 }
