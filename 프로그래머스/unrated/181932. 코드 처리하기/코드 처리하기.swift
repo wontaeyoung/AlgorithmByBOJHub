@@ -6,8 +6,7 @@ func solution(_ code:String) -> String {
     var ret: String = ""
     
     for idx in 0...code.count - 1 {
-        let currentChar = codeArray[idx]
-        let currentCharAsString = String(currentChar)
+        let currentChar = String(codeArray[idx])
         
         if currentChar == "1" {
             mode.toggle()
@@ -15,9 +14,9 @@ func solution(_ code:String) -> String {
         }
         
         if mode {
-            ret += idx % 2 == 1 ? currentCharAsString : "" 
+            ret.write(idx % 2 == 1 ? currentChar : "")
         } else {
-            ret += idx % 2 == 0 ? currentCharAsString : "" 
+            ret.write(idx % 2 == 0 ? currentChar : "")
         }
     }
     
