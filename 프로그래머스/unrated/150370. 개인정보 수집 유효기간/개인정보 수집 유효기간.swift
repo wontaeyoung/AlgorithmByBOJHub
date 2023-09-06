@@ -21,9 +21,10 @@ func solution(_ today:String, _ terms:[String], _ privacies:[String]) -> [Int] {
     }
     
     // 시작일 + 유효기간이 오늘 날짜보다 이전인 애들의 인덱스 번호 + 1 반환
-    return privacyList.enumerated().filter {
-        $0.element <= dayToday
-    }.map{$0.offset + 1}
+    return privacyList
+    .enumerated()
+    .filter{$0.element <= dayToday}
+    .map{$0.offset + 1}
 }
 
 // 2022.05.19 -> 일로 변환하는 함수
