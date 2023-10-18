@@ -1,10 +1,10 @@
-# [unrated] 글자 이어 붙여 문자열 만들기 - 181915 
+# [level unrated] 글자 이어 붙여 문자열 만들기 - 181915 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181915) 
 
 ### 성능 요약
 
-메모리: 16.2 MB, 시간: 0.13 ms
+메모리: 16.4 MB, 시간: 0.12 ms
 
 ### 구분
 
@@ -12,7 +12,11 @@
 
 ### 채점결과
 
-Empty
+정확성: 100.0<br/>합계: 100.0 / 100.0
+
+### 제출 일자
+
+2023년 10월 3일 23:53:45
 
 ### 문제 설명
 
@@ -68,4 +72,4 @@ Empty
 </ul>
 
 
-> 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
+> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
