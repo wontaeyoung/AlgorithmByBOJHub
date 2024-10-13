@@ -2,7 +2,7 @@ SELECT
     dr_name,
     dr_id,
     mcdp_cd,
-    DATE_FORMAT(hire_ymd, '%Y-%m-%d') as hire_ymd
+    DATE_FORMAT(hire_ymd, '%Y-%m-%d') AS hire_ymd
 FROM
     doctor
 WHERE
