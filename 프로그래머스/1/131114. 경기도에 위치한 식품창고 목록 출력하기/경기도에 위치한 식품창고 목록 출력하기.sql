@@ -1,6 +1,11 @@
-SELECT WAREHOUSE_ID, WAREHOUSE_NAME, ADDRESS,
-IFNULL(FREEZER_YN, 'N')
-FROM FOOD_WAREHOUSE
-WHERE 1=1
-AND ADDRESS LIKE '경기도%'
-ORDER BY 1
+SELECT 
+    warehouse_id,
+    warehouse_name, 
+    address,
+    IFNULL(freezer_yn, 'N')
+FROM
+    food_warehouse
+WHERE
+    address LIKE '경기도%'
+ORDER BY
+    warehouse_id
