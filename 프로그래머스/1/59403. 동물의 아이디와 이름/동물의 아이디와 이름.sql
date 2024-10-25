@@ -3,5 +3,4 @@ SELECT
     name
 FROM
     animal_ins
-ORDER BY 
-    1
+ORDER BY 1
