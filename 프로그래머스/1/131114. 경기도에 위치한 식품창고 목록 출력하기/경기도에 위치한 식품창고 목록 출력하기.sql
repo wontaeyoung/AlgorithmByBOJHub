@@ -2,7 +2,7 @@ SELECT
     warehouse_id,
     warehouse_name, 
     address,
-    IFNULL(freezer_yn, 'N')
+    IFNULL(freezer_yn, 'N') AS freezer_yn
 FROM
     food_warehouse
 WHERE
