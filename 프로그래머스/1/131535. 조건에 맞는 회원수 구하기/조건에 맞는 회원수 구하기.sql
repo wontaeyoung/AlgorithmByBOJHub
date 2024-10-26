@@ -1,10 +1,7 @@
 SELECT
     COUNT(
-        CASE WHEN
-            joined >= '2021-01-01'
-            AND joined < '2022-01-01'
-            AND age >= 20
-            AND age < 30
+        CASE WHEN YEAR(joined) = 2021
+            AND age BETWEEN 20 AND 29
         THEN 1
         ELSE NULL END
     ) AS USERS
