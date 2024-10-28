@@ -3,5 +3,5 @@ SELECT COUNT(
             AND age BETWEEN 20 AND 29
         THEN 1
         ELSE NULL END
-) AS USERS
+) AS users
 FROM user_info
