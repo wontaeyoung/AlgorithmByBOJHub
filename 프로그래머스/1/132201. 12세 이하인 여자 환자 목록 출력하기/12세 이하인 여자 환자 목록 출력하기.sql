@@ -3,7 +3,7 @@ SELECT pt_name,
     gend_cd,
     age,
     IFNULL(tlno, "NONE") AS tlno
-FROM  patient
+FROM patient
 WHERE gend_cd="W"
     AND age <= 12
 ORDER BY age DESC,
