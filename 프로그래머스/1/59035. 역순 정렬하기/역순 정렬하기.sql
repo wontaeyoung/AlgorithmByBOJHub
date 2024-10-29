@@ -1,7 +1,4 @@
-SELECT
-    name,
+SELECT name,
     datetime
-FROM 
-    animal_ins
-ORDER BY 
-    animal_id DESC
+FROM animal_ins
+ORDER BY animal_id DESC
