@@ -1,4 +1,4 @@
-SELECT  factory_id,
+SELECT factory_id,
     factory_name,
     address
 FROM food_factory
