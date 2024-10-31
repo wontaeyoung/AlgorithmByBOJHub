@@ -1,7 +1,7 @@
 SELECT COUNT(
         CASE WHEN YEAR(joined) = 2021
             AND age BETWEEN 20 AND 29
-        THEN 1
-        ELSE NULL END
+        THEN 1 
+    ELSE NULL END
 ) AS users
 FROM user_info
