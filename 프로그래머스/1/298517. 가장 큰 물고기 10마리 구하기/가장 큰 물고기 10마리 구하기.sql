@@ -1,10 +1,6 @@
-SELECT
-    id,
+SELECT id,
     length
-FROM
-    fish_info
-ORDER BY
-    length DESC,
+FROM fish_info
+ORDER BY length DESC,
     id
-LIMIT
-    10
+LIMIT 10
