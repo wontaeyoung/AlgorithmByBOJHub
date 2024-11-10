@@ -10,6 +10,7 @@ SELECT g.score,
     he.emp_name,
     he.position,
     he.email
-FROM hr_employees he JOIN grade g ON he.emp_no = g.emp_no
+FROM hr_employees he JOIN grade g 
+    ON he.emp_no = g.emp_no
 ORDER BY g.score DESC
 LIMIT 1
